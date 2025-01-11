@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blog Dashboard</h1>
+        </header>
+
+        <div class="dashboard">
+            <div class="post-list">
+                <h2>Your Blog Posts</h2>
+                <ul id="post-list">
+                    <!-- List of blog posts will appear here -->
+                </ul>
+            </div>
+            <div class="create-post">
+                <h2>Create New Post</h2>
+                <form id="create-form">
+                    <input type="text" id="post-title" placeholder="Post Title" required>
+                    <textarea id="post-content" placeholder="Post Content" required></textarea>
+                    <button type="submit">Create Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="edit-modal">
+        <div class="modal-content">
+            <h3>Edit Post</h3>
+            <input type="text" id="edit-title" placeholder="Post Title" required>
+            <textarea id="edit-content" placeholder="Post Content" required></textarea>
+            <button id="save-btn">Save</button>
+            <button id="cancel-btn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
